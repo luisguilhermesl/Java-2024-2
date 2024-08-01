@@ -4,7 +4,7 @@ package For;
  *Crie um programa que imprima os números pares de 0 a 20.
  * @author Luis
  */
-public class imprimirNumPar {
+public class ImprimirNumPar {
     public static void main(String[] args) {
         for(int i = 0; i<=20; i+=2){
             System.out.println(i);

@@ -4,7 +4,7 @@ package For;
  *Desenvolva um programa que inverta uma string.
  * @author Luis
  */
-public class inverterString {
+public class InverterString {
     public static void main(String[] args) {
         String original = "Luis"; //A string original armazena a string a ser invertida.
         String invertida = ""; //A string invertida é inicializada como vazia para armazenar o resultado.

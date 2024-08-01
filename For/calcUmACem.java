@@ -4,7 +4,7 @@ package For;
  *Escreva um código que calcule a soma dos números de 1 a 100.
  * @author Luis
  */
-public class calcUmACem {
+public class CalcUmACem {
     public static void main(String[] args) {
         int soma = 0;
         for(int i = 1; i <= 100; i++){

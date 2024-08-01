@@ -6,7 +6,7 @@ import java.util.Scanner; //Importa a classe Scanner para ler a entrada do usuá
  * 
  * @author Luis
  */
-public class numDeVogais {
+public class NumDeVogais {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in); //Cria um objeto input da classe Scanner para ler a entrada do usuário.
         
