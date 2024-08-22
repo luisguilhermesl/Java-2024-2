@@ -1,0 +1,41 @@
+CREATE DATABASE meubanco
+DEFAULT CHARACTER SET UTF8MB4
+DEFAULT COLLATE UTF8MB4_GENERAL_CI;
+-- CONSTRAINTS: REGRAS 
+
+CREATE TABLE pessoas(
+id int NOT NULL AUTO_INCREMENT,
+nome VARCHAR(30) NOT NULL,
+nascimento DATE,
+sexo ENUM('M','F'),
+peso DECIMAL (6,3), -- |1|0|2,|3|0|0|
+altura DECIMAL (3,2), -- |1,|8|5|
+nacionalidade VARCHAR(20) DEFAULT 'BRASIL',
+PRIMARY KEY(id) -- é o registro ÚNICO
+)DEFAULT CHARSET = UTF8MB4;
+
+SELECT * FROM pessoas;
+DESC pessoas;
+
+DROP TABLE pessoas;
+DROP DATABASE meubanco;
+
+-- INSERINDO DADOS
+
+-- MODO PADRÃO
+INSERT INTO pessoas
+(id, nome, nascimento, sexo, peso, altura, nacionalidade)
+VALUES
+(DEFAULT, 'Irineu','1990-12-05', 'M', '80.5', '1.80', DEFAULT);
+
+-- MODO SIMPLIFICADO
+INSERT INTO pessoas VALUES
+(DEFAULT, 'Wallysson','1998-04-21', 'M', '82', '1.85', 'Canadá');
+
+-- MODO DINÂMICO
+INSERT INTO pessoas VALUES
+(DEFAULT, 'Pedro','2000-04-15', 'M', '88.1', '1.75', DEFAULT),
+(DEFAULT, 'Lorenzo','2005-07-05', 'M', '75.2', '1.72', DEFAULT),
+(DEFAULT, 'Caio','1830-07-10', 'M', '50', '1.20', 'Caxias'),
+(DEFAULT, 'Julio','2015-02-25', 'M', '90.0', '1.95', 'Paysandu');
+
